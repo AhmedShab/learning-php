@@ -6,13 +6,13 @@
 		<aside class="col-xs-4">
 
 	<?php Navigation();?>
-			
-			
+
+
 		</aside><!--SIDEBAR-->
 
 
 		<article class="main-content col-xs-8">
-		
+
 
 <?php
 
@@ -25,15 +25,30 @@
 
 		  Step3: Make 2 Arrays with the same values, one regular and the other associative
 
-		 
+
 			 */
 
-		
+			 $number1 = 10;
+			 $number2 = 20;
+
+			 echo "The sum of " . $number1 . " and " . $number2 . " is equal to " . ($number1 + $number2);
+
+			 echo "<br><br>";
+
+			 echo "foreach loop. Key value pair" . "<br>";
+
+			 $numbers = array(10, 20);
+			 $numbers_associative = array("num1" => 10, "num2" => 20);
+
+			 foreach ($numbers_associative as $key => $value) {
+			 	echo "The key is {$key} the value is {$value}";
+				echo "<br>";
+			 }
 
 
 		?>
 
-	
+
 
 		</article><!--MAIN CONTENT-->
 
